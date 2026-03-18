@@ -108,6 +108,14 @@
             filter: invert(1) hue-rotate(180deg) contrast(2) grayscale(0.5);
             transition: filter 0.1s;
         }
+
+        /* Estilos para el acordeón de FAQ */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
     </style>
 </head>
 <body class="bg-void text-gray-300 font-sans antialiased overflow-x-hidden selection:bg-blood selection:text-white noise-bg animate-flicker">
@@ -117,7 +125,7 @@
     <header class="fixed top-0 w-full z-40 px-6 py-3 flex justify-between items-center bg-black/90 backdrop-blur-md border-b border-gray-900">
         <div class="flex items-center gap-3">
             <img src="./img/Gemini_Generated_Image_a8avqxa8avqxa8av-removebg-preview.png" alt="SHADOW Logo" class="h-20 w-auto object-contain drop-shadow-[0_0_8px_rgba(138,3,3,0.3)]">
-            <span class="text-xl font-display font-bold text-white tracking-[0.30em] uppercase scramble-text"></span>
+            <span class="text-xl font-display font-bold text-white tracking-[0.15em] uppercase scramble-text"></span>
         </div>
         <a href="#registro" class="px-4 py-1.5 border border-blood text-blood text-xs uppercase tracking-widest hover:bg-blood hover:text-white transition-all duration-300">
             Responder
@@ -206,6 +214,48 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-4 relative bg-image-section"
+             style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.95), rgba(0,0,0,0.85), rgba(0,0,0,0.95)), 
+             url('https://media1.tenor.com/m/kJIDW4Sr80oAAAAd/puppet-combo-horror-game.gif');">
+        <div class="max-w-3xl mx-auto relative z-10">
+            <h2 class="text-2xl font-display font-bold text-gray-400 mb-10 uppercase tracking-widest text-center border-b border-gray-900 pb-4 scramble-text">
+                Dudas antes de la condena
+            </h2>
+            
+            <div class="space-y-4 text-left">
+                <details class="group bg-noise/80 backdrop-blur-sm border border-gray-800 p-6 cursor-cell transition-all duration-300 hover:border-blood">
+                    <summary class="flex justify-between items-center font-bold text-white uppercase tracking-wider focus:outline-none">
+                        ¿Por qué exigimos ser mayores de 18 años?
+                        <span class="text-blood group-open:rotate-45 transition-transform duration-300">+</span>
+                    </summary>
+                    <p class="text-gray-400 mt-4 text-sm leading-relaxed border-t border-gray-800 pt-4">
+                        Nuestro catálogo no tiene filtros. No censuramos el horror psicológico, el gore ni el contenido extremo. Si buscas experiencias suaves o comerciales, vuelve a las plataformas tradicionales. Aquí el miedo no tiene frenos.
+                    </p>
+                </details>
+
+                <details class="group bg-noise/80 backdrop-blur-sm border border-gray-800 p-6 cursor-cell transition-all duration-300 hover:border-blood">
+                    <summary class="flex justify-between items-center font-bold text-white uppercase tracking-wider focus:outline-none">
+                        ¿Cómo funciona el 30% de descuento?
+                        <span class="text-blood group-open:rotate-45 transition-transform duration-300">+</span>
+                    </summary>
+                    <p class="text-gray-400 mt-4 text-sm leading-relaxed border-t border-gray-800 pt-4">
+                        Al registrar tu correo ahora, aseguras tu lugar en la base de datos de pioneros. El día del lanzamiento oficial, recibirás un enlace encriptado con un código único y de un solo uso, aplicable automáticamente a tu primera compra.
+                    </p>
+                </details>
+
+                <details class="group bg-noise/80 backdrop-blur-sm border border-gray-800 p-6 cursor-cell transition-all duration-300 hover:border-blood">
+                    <summary class="flex justify-between items-center font-bold text-white uppercase tracking-wider focus:outline-none">
+                        ¿Por qué los precios son más bajos?
+                        <span class="text-blood group-open:rotate-45 transition-transform duration-300">+</span>
+                    </summary>
+                    <p class="text-gray-400 mt-4 text-sm leading-relaxed border-t border-gray-800 pt-4">
+                        Destruimos la cadena de intermediarios. No cobramos las comisiones abusivas del 30% que exigen otras tiendas gigantes. Trabajamos directo con desarrolladores indie y estudios propios, pasándote el ahorro directamente a ti.
+                    </p>
+                </details>
             </div>
         </div>
     </section>
